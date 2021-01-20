@@ -1,0 +1,16 @@
+
+
+img {
+  width: auto;
+  height: 100vh;
+}
+
+body {
+  background-image: 'images/bbisland.png';
+  background-color: #cccccc;
+  width: auto;
+  height: 100vh;
+  font-family: 'Niagara Solid';
+  font-size: 42px;
+  font-stretch: expanded;
+}
