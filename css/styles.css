@@ -4,13 +4,12 @@
 body {
   background-image: url("../images/bbisland.png"), url("https://github.com/ValleyElectric/site/blob/main/images/bbisland.png?raw=true");
   background-repeat: no-repeat;
-  background-position: 50% 20%;
+  background-position: 50% 0;
   background-color: #4c5e66;
   height: 100%;
   width: auto;
   font-family: 'Niagara Solid';
   font-size: 43px;
-  -webkit-text-size-adjust: 100%;
 
 }
 
@@ -55,14 +54,6 @@ body {
 
 #content-wrap{
     padding-bottom: 2.5rem;
-}
-
-#footer{
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;
-  color: white;
 }
 
 #maintitle{
@@ -115,6 +106,14 @@ body {
 
 .doublestrike{
 
+}
+
+#footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  color: white;
 }
 
 #licensefooter{
