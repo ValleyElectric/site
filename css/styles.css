@@ -48,7 +48,7 @@ body {
 
 #pagecontainer{
   position: relative;
-  height: 200vh;
+  height: 150vh;
   min-height: 100vh;
 }
 
@@ -85,7 +85,7 @@ body {
 #menucontainer{
   position: relative;
   left: 2em;
-  top: 4em;
+  top: 6em;
 }
 
 #menubar{
@@ -93,6 +93,7 @@ body {
   height: 1.5em;
   font-size: 70px;
   color: #f7edeb;
+  width: 10px;
 }
 
 .mainmenulink{
@@ -104,8 +105,29 @@ body {
   color: black;
 }
 
-.doublestrike{
+#menubar:hover  .doublestrikeone{
+  background-color: black;
+}
+#menubar:hover  .doublestriketwo{
+  background-color: black;
+}
 
+.doublestrikeone{
+  position: absolute;
+  top: .5em;
+  width: 100px;
+  height: 4px;
+  left: -0.25em;
+  transform: rotate(45deg);
+}
+
+.doublestriketwo{
+  position: absolute;
+  top: .5em;
+  width: 100px;
+  height: 4px;
+  left: 0.25em;
+  transform: rotate(45deg);
 }
 
 #footer{
@@ -121,4 +143,8 @@ body {
   text-align: center;
   bottom: 1em;
   font-size: 10px;
+}
+
+a{
+  color: inherit;
 }
