@@ -1,16 +1,76 @@
 
 
-img {
-  width: auto;
-  height: 100vh;
-}
 
 body {
-  background-image: 'images/bbisland.png';
-  background-color: #cccccc;
+  background-image: url("../images/bbisland.png");
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  height: 100%;
   width: auto;
-  height: 100vh;
   font-family: 'Niagara Solid';
-  font-size: 42px;
-  font-stretch: expanded;
+  font-size: 43px;
+
 }
+
+#name{
+  position: relative;
+  font-family: 'Niagara Solid';
+  font-size: 70px;
+  font-weight: normal;
+}
+
+#articles{
+  position: relative;
+  font-family: 'Niagara Solid';
+  font-size: 44px;
+  font-weight: normal;
+  right: .5em;
+  top: .8em;
+  text-decoration: underline;
+  text-underline-position: below 20%;
+}
+
+#bandname{
+  position: relative;
+  top: 1em;
+  left: 3em;
+  width: 8em;
+  height: 7em;
+}
+
+.bluesquare{
+  position: absolute;
+  top: 1em;
+  left: -0.5em;
+  width: 9em;
+  height: 4.5em;
+  background-color: #4c5e66;
+}
+
+#maintitle{
+  font-size:100px;
+  font-weight: normal;
+  color: white;
+}
+
+#bandname > * {
+  position: absolute;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.top {
+  top: 0;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+#menu
