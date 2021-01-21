@@ -2,26 +2,26 @@
 
 
 body {
-  background-image: url("../images/bbisland.png");
+  background-image: url("https://github.com/ValleyElectric/site/blob/main/images/bbisland.png?raw=true");
   background-repeat: no-repeat;
   background-position: 50% 20%;
+  background-color: #4c5e66;
   height: 100%;
   width: auto;
   font-family: 'Niagara Solid';
   font-size: 43px;
+  -webkit-text-size-adjust: 100%;
 
 }
 
 #name{
   position: relative;
-  font-family: 'Niagara Solid';
   font-size: 70px;
   font-weight: normal;
 }
 
 #articles{
   position: relative;
-  font-family: 'Niagara Solid';
   font-size: 44px;
   font-weight: normal;
   right: .5em;
