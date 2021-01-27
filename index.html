@@ -6,56 +6,71 @@
     <head>
       <link rel="stylesheet" href="css/styles.css">
     </head>
+    <div>
+      <div id=headercontainer>
+          <img class=logo src="images/logo black.png">
+          <p class=bandname> Robert Perez & </br> The Valley Electric </p>
 
-    <div id=headercontainer>
-        <img class=logo src="images/logo black.png">
-        <p class=bandname> Robert Perez & </br> The Valley Electric </p>
-        <div class=bluesquare></div>
+      </div>
     </div>
+
+    <a href="https://thevalleyelectric.bandcamp.com/">
+      <img id = "rightbanner" src="images/new album promo image.png" alt="bandcamp link">
+    </a>
 
     <div id=menucontainer>
-        <div id=menubar>
-          <button type="button" class = "collapsable">Listen</button>
+        <div id="menubar">
+          <button type="button" class = "collapsible">Listen</button>
           <div class="content">
-            <p>info here</p>
+            <p>Bandcamp link here later</p>
           </div>
         </div>
-        <div id=menubar>
-          <button type="button" class="collapsable">About</button>
+        <div id="menubar">
+          <button type="button" id="mainbutton" class="collapsible">About</button>
           <div class="content">
-            <p>info here</p>
+            <p>ROBERT PEREZ grew up between Louisville and Boulder Colorado and
+              now lives in Brighton. New to the Independent music scene, he is
+              soon to release his debut concept album: Portraits of Emma Jane,
+              which recounts the life of a woman who lived by the sea.
+              He has previously worked as a piano bar musician and a-cappella
+              singer in and around the Front Range.</br></br> THE VALLEY ELECTRIC is
+              a group of the foremost Denver Metro musicians inculding:
+              Adam Baerd (Guitar/Mandolin), Thomas Reis (Percussion), Duncan Britt
+               (Electric Guitar), Eleanor Dunlap (Double Bass), Rachael Perez
+               (Vocals) Avery Johnson(Cello), and Sam Martens (Vocals, Electric bass)</p>
           </div>
         </div>
-        <div id=menubar>
-          <button type="button" class="collapsable">Contact</button>
+        <div id="menubar">
+          <button type="button" id="mainbutton" class="collapsible">Contact</button>
           <div class="content">
-            <p>info here</p>
+            <p>Please send any and all inquiries to the following:</p>
+            <a href = "mailto:andthevalleyelectric@gmail.com">andthevalleyelectric@gmail.com
           </div>
         </div>
     </div>
-
-    <footer id=footer>
-      <div id=licensefooter>Font made from <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>is licensed by CC BY 3.0</div>
-    </footer>
   </div>
 
-  <script>
-  var coll = document.getElementsByClassName("collapsible");
-  var i;
+  <footer id=footer>
+    <div id=licensefooter>Font made from <a href="http://www.onlinewebfonts.com">oNline
+      Web Fonts</a>is licensed by CC BY 3.0</br>Website Copyright Robert Perez 2021</div>
+  </footer>
 
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.display === "block") {
-        content.style.display = "none";
-      } else {
-        content.style.display = "block";
-      }
-    });
-  }
-  </script>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 
 </body>
-
 </html>

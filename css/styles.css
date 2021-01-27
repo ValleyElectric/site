@@ -58,6 +58,17 @@ body {
   padding-left: .25em;
 }
 
+#rightbanner {
+  position: relative;
+  height: 5em;
+  left: 2em;
+  padding-top: 1em;
+}
+
+#rightbanner:hover{
+  filter: blur(3px);
+}
+
 
 #pagecontainer{
   position: relative;
@@ -78,17 +89,9 @@ body {
 
 #menucontainer{
   position: relative;
+  width: 800px;
   left: 2em;
   top: 1em;
-}
-
-#menubar{
-  position: relative;
-  height: 1.5em;
-  font-size: 70px;
-  /*color: #f7edeb;*/
-  width: 10px;
-  color: black;
 }
 
 .mainmenulink{
@@ -107,8 +110,41 @@ body {
   background-color: black;
 }
 
-.collapsable{
-  background-color:
+#menubar{
+  padding-bottom: 0.5em;
+}
+
+.collapsible {
+  position: relative;
+  border: none;
+  background: none;
+  padding: 0;
+  color: black;
+  background-color: white;
+  width: 100%;
+  border-bottom-style: solid;
+  border-bottom-width: 10px;
+  cursor: pointer;
+  font-size: 50px;
+  font-family: 'Niagara Solid';
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  width: inherit;
+  padding: 1em;
+  font-size: 75%;
+  display: none;
+  overflow: hidden;
+  background-color: #a88932;
+  font-family: courier;
+}
+
+#info {
+  left: 10%;
 }
 
 .doublestrikeone{
@@ -130,7 +166,7 @@ body {
 }
 
 #footer{
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
   height: 2.5rem;
@@ -139,7 +175,7 @@ body {
 
 #licensefooter{
   font-family: arial;
-  text-align: center;
+  text-align: right;
   bottom: 1em;
   font-size: 10px;
 }
