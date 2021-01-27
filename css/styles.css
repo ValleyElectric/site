@@ -10,8 +10,8 @@ body {
   width: auto;
   font-family: 'Niagara Solid';
   font-size: 43px;
-
 }
+
 
 #name{
   position: relative;
@@ -29,27 +29,41 @@ body {
   text-underline-position: below 20%;
 }
 
-#bandname{
+#headercontainer{
+  background-color: white;
   position: relative;
-  top: 1em;
   left: 2em;
-  width: 8em;
-  height: 7em;
+  width: 14em;
+  height: 5em;
+  border-bottom-style: solid;
+  border-width: 10px;
+  border-color: inherit;
+  }
+
+#headercontainer .bandname{
+  position: relative;
+  width: 100%;
+  padding-left: 10%;
+  font-size: 200%;
+  height: auto;
+  text-align: justify;
 }
 
-.bluesquare{
-  position: absolute;
-  top: 1em;
-  left: -0.5em;
-  width: 9em;
-  height: 4.5em;
-  background-color: #4c5e66;
+#headercontainer .logo{
+  padding-top: 2%;
+  height:4em;
+  width: auto;
+  float: left;
+  padding-right: 1em;
+  padding-left: .25em;
 }
+
 
 #pagecontainer{
   position: relative;
-  height: 150vh;
+  height: 110vh;
   min-height: 100vh;
+  width: 100vh;
 }
 
 #content-wrap{
@@ -62,38 +76,19 @@ body {
   color: white;
 }
 
-#bandname > * {
-  position: absolute;
-}
-
-.left {
-  left: 0;
-}
-
-.right {
-  right: 0;
-}
-
-.top {
-  top: 0;
-}
-
-.bottom {
-  bottom: 0;
-}
-
 #menucontainer{
   position: relative;
   left: 2em;
-  top: 6em;
+  top: 1em;
 }
 
 #menubar{
   position: relative;
   height: 1.5em;
   font-size: 70px;
-  color: #f7edeb;
+  /*color: #f7edeb;*/
   width: 10px;
+  color: black;
 }
 
 .mainmenulink{
@@ -106,10 +101,14 @@ body {
 }
 
 #menubar:hover  .doublestrikeone{
-  background-color: black;
+  background-color: #f7edeb;
 }
 #menubar:hover  .doublestriketwo{
   background-color: black;
+}
+
+.collapsable{
+  background-color:
 }
 
 .doublestrikeone{
